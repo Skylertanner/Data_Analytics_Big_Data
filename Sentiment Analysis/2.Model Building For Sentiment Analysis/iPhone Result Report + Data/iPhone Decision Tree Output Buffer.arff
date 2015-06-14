@@ -1,0 +1,319 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     iphone_smallmatrix_labeled_8d-weka.filters.unsupervised.attribute.NumericToNominal-R59-weka.filters.unsupervised.attribute.Remove-R4,11,15-16,20-21,26,30-31,35-36,40-41,45-46,50-51,53,55,57
+Instances:    12973
+Attributes:   39
+              iphone
+              samsunggalaxy
+              sonyxperia
+              htcphone
+              ios
+              googleandroid
+              iphonecampos
+              samsungcampos
+              sonycampos
+              htccampos
+              iphonecamneg
+              samsungcamneg
+              htccamneg
+              iphonecamunc
+              samsungcamunc
+              htccamunc
+              iphonedispos
+              samsungdispos
+              sonydispos
+              htcdispos
+              iphonedisneg
+              samsungdisneg
+              htcdisneg
+              iphonedisunc
+              samsungdisunc
+              htcdisunc
+              iphoneperpos
+              samsungperpos
+              htcperpos
+              iphoneperneg
+              samsungperneg
+              htcperneg
+              iphoneperunc
+              samsungperunc
+              htcperunc
+              googleperpos
+              googleperneg
+              googleperunc
+              iphonesentiment
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+iphone <= 0
+|   googleandroid <= 0
+|   |   samsungperunc <= 1
+|   |   |   samsungdisneg <= 0: 0 (858.0/1.0)
+|   |   |   samsungdisneg > 0
+|   |   |   |   samsungdisunc <= 0
+|   |   |   |   |   samsungdispos <= 0: 0 (7.0)
+|   |   |   |   |   samsungdispos > 0
+|   |   |   |   |   |   samsungdispos <= 1: 5 (9.0/2.0)
+|   |   |   |   |   |   samsungdispos > 1: 0 (3.0/1.0)
+|   |   |   |   samsungdisunc > 0: 0 (13.0)
+|   |   samsungperunc > 1
+|   |   |   samsungdisunc <= 4
+|   |   |   |   samsungperpos <= 3
+|   |   |   |   |   samsungperpos <= 2: 0 (3.0/1.0)
+|   |   |   |   |   samsungperpos > 2: 5 (3.0/1.0)
+|   |   |   |   samsungperpos > 3: 0 (7.0/1.0)
+|   |   |   samsungdisunc > 4: 4 (4.0)
+|   googleandroid > 0
+|   |   htcphone <= 0: 2 (62.0)
+|   |   htcphone > 0: 0 (2.0)
+iphone > 0
+|   ios <= 4
+|   |   samsungcamneg <= 0
+|   |   |   sonyxperia <= 0
+|   |   |   |   googleandroid <= 0
+|   |   |   |   |   samsunggalaxy <= 0
+|   |   |   |   |   |   htccampos <= 0
+|   |   |   |   |   |   |   iphonedisneg <= 4
+|   |   |   |   |   |   |   |   iphonedisunc <= 0
+|   |   |   |   |   |   |   |   |   iphonedispos <= 0: 5 (8445.0/2298.0)
+|   |   |   |   |   |   |   |   |   iphonedispos > 0
+|   |   |   |   |   |   |   |   |   |   iphoneperpos <= 0
+|   |   |   |   |   |   |   |   |   |   |   iphonedisneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphone <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 2: 3 (167.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 2: 5 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 0: 0 (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc > 0: 4 (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg <= 0: 5 (33.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphone > 1: 5 (65.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   iphonedisneg > 0
+|   |   |   |   |   |   |   |   |   |   |   |   htcphone <= 0: 5 (126.0/32.0)
+|   |   |   |   |   |   |   |   |   |   |   |   htcphone > 0: 0 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   iphoneperpos > 0
+|   |   |   |   |   |   |   |   |   |   |   htcphone <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperpos <= 4: 5 (438.0/75.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperpos > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg <= 0: 5 (37.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg > 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperpos <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 2: 5 (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperpos > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 0: 4 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 0: 0 (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   htcphone > 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphone <= 1: 0 (5.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphone > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 3: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 3: 2 (2.0/1.0)
+|   |   |   |   |   |   |   |   iphonedisunc > 0
+|   |   |   |   |   |   |   |   |   iphoneperpos <= 0
+|   |   |   |   |   |   |   |   |   |   iphonecamneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   iphonedisneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphone <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphone <= 1: 3 (165.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphone > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamunc <= 0: 3 (26.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamunc > 0: 5 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc > 1: 5 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 0: 5 (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 0: 5 (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc <= 1: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc > 1: 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphone > 2: 5 (24.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   iphonedisneg > 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 0: 5 (41.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphone <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc <= 0: 3 (44.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc > 0: 5 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphone > 1: 5 (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 0: 4 (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 1: 5 (66.0/16.0)
+|   |   |   |   |   |   |   |   |   |   iphonecamneg > 0
+|   |   |   |   |   |   |   |   |   |   |   iphonecampos <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc <= 1: 3 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc > 1: 1 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc <= 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc > 1: 5 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   iphonecampos > 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 0: 5 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos <= 2: 4 (19.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos <= 4: 5 (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos > 4: 4 (3.0)
+|   |   |   |   |   |   |   |   |   iphoneperpos > 0
+|   |   |   |   |   |   |   |   |   |   iphonedisneg <= 1
+|   |   |   |   |   |   |   |   |   |   |   iphone <= 3: 5 (477.0/137.0)
+|   |   |   |   |   |   |   |   |   |   |   iphone > 3
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos <= 0: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 1: 5 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedispos > 7: 2 (2.0)
+|   |   |   |   |   |   |   |   |   |   iphonedisneg > 1
+|   |   |   |   |   |   |   |   |   |   |   iphone <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   iphonecampos <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   htccamneg <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamunc <= 0: 5 (98.0/27.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamunc > 0: 0 (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   htccamneg > 0: 3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphonecampos > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg <= 1: 5 (34.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos <= 2: 5 (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecampos > 2: 0 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperpos <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg <= 0: 5 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonecamneg > 0: 4 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperpos > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisneg <= 2: 5 (20.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisneg > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc <= 4: 5 (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphonedisunc > 4: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperunc > 3: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   iphoneperneg > 3: 5 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   iphone > 6
+|   |   |   |   |   |   |   |   |   |   |   |   iphone <= 7: 4 (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphone > 7: 0 (2.0)
+|   |   |   |   |   |   |   iphonedisneg > 4
+|   |   |   |   |   |   |   |   iphonecampos <= 0
+|   |   |   |   |   |   |   |   |   htcdisunc <= 1: 5 (108.0/23.0)
+|   |   |   |   |   |   |   |   |   htcdisunc > 1: 3 (4.0/2.0)
+|   |   |   |   |   |   |   |   iphonecampos > 0
+|   |   |   |   |   |   |   |   |   iphonedisunc <= 1
+|   |   |   |   |   |   |   |   |   |   iphonecampos <= 2
+|   |   |   |   |   |   |   |   |   |   |   iphonecamunc <= 0: 0 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   iphonecamunc > 0
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedisneg <= 6: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   iphonedisneg > 6: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   iphonecampos > 2: 5 (2.0)
+|   |   |   |   |   |   |   |   |   iphonedisunc > 1
+|   |   |   |   |   |   |   |   |   |   iphonecamunc <= 0
+|   |   |   |   |   |   |   |   |   |   |   iphonecampos <= 1: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   iphonecampos > 1: 5 (2.0)
+|   |   |   |   |   |   |   |   |   |   iphonecamunc > 0: 4 (175.0/2.0)
+|   |   |   |   |   |   htccampos > 0
+|   |   |   |   |   |   |   iphone <= 2
+|   |   |   |   |   |   |   |   iphoneperunc <= 0: 0 (39.0/5.0)
+|   |   |   |   |   |   |   |   iphoneperunc > 0
+|   |   |   |   |   |   |   |   |   iphonedisneg <= 0: 0 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   iphonedisneg > 0
+|   |   |   |   |   |   |   |   |   |   iphonecampos <= 1: 3 (14.0)
+|   |   |   |   |   |   |   |   |   |   iphonecampos > 1
+|   |   |   |   |   |   |   |   |   |   |   iphonedisunc <= 2: 0 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   iphonedisunc > 2: 3 (2.0)
+|   |   |   |   |   |   |   iphone > 2
+|   |   |   |   |   |   |   |   iphonecamunc <= 2
+|   |   |   |   |   |   |   |   |   iphonecampos <= 5: 4 (13.0)
+|   |   |   |   |   |   |   |   |   iphonecampos > 5: 0 (2.0/1.0)
+|   |   |   |   |   |   |   |   iphonecamunc > 2
+|   |   |   |   |   |   |   |   |   iphonecampos <= 4: 3 (10.0)
+|   |   |   |   |   |   |   |   |   iphonecampos > 4: 4 (3.0/1.0)
+|   |   |   |   |   samsunggalaxy > 0
+|   |   |   |   |   |   iphoneperpos <= 0
+|   |   |   |   |   |   |   iphonecamunc <= 0
+|   |   |   |   |   |   |   |   iphonedispos <= 0: 3 (201.0/4.0)
+|   |   |   |   |   |   |   |   iphonedispos > 0
+|   |   |   |   |   |   |   |   |   iphonedisunc <= 0: 5 (13.0/7.0)
+|   |   |   |   |   |   |   |   |   iphonedisunc > 0: 3 (3.0)
+|   |   |   |   |   |   |   iphonecamunc > 0
+|   |   |   |   |   |   |   |   iphonedispos <= 0: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   iphonedispos > 0: 5 (3.0/1.0)
+|   |   |   |   |   |   iphoneperpos > 0: 5 (18.0/2.0)
+|   |   |   |   googleandroid > 0
+|   |   |   |   |   iphoneperpos <= 0
+|   |   |   |   |   |   htcphone <= 0: 3 (140.0/1.0)
+|   |   |   |   |   |   htcphone > 0: 2 (3.0/1.0)
+|   |   |   |   |   iphoneperpos > 0
+|   |   |   |   |   |   iphonedispos <= 0: 5 (3.0/1.0)
+|   |   |   |   |   |   iphonedispos > 0: 4 (16.0/5.0)
+|   |   |   sonyxperia > 0
+|   |   |   |   iphoneperpos <= 0: 0 (206.0/7.0)
+|   |   |   |   iphoneperpos > 0
+|   |   |   |   |   iphone <= 2
+|   |   |   |   |   |   samsungdisunc <= 0
+|   |   |   |   |   |   |   samsungcamunc <= 0
+|   |   |   |   |   |   |   |   iphonecamneg <= 1: 5 (27.0/7.0)
+|   |   |   |   |   |   |   |   iphonecamneg > 1: 0 (2.0)
+|   |   |   |   |   |   |   samsungcamunc > 0: 0 (2.0)
+|   |   |   |   |   |   samsungdisunc > 0
+|   |   |   |   |   |   |   iphonecamunc <= 1
+|   |   |   |   |   |   |   |   iphonecampos <= 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   iphonecampos > 1: 0 (2.0)
+|   |   |   |   |   |   |   iphonecamunc > 1: 4 (2.0)
+|   |   |   |   |   iphone > 2: 2 (2.0/1.0)
+|   |   samsungcamneg > 0
+|   |   |   iphonedispos <= 3: 0 (131.0/3.0)
+|   |   |   iphonedispos > 3
+|   |   |   |   iphone <= 3: 3 (2.0/1.0)
+|   |   |   |   iphone > 3: 4 (5.0)
+|   ios > 4: 4 (246.0)
+
+Number of Leaves  : 	114
+
+Size of the tree : 	227
+
+
+Time taken to build model: 3.94 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10015               77.1988 %
+Incorrectly Classified Instances      2958               22.8012 %
+Kappa statistic                          0.5582
+Mean absolute error                      0.1228
+Root mean squared error                  0.2517
+Relative absolute error                 59.7629 %
+Root relative squared error             78.5246 %
+Total Number of Instances            12973     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.648     0.005      0.958     0.648     0.773      0.839    0
+                 0         0          0         0         0          0.584    1
+                 0.137     0.001      0.861     0.137     0.236      0.644    2
+                 0.642     0.003      0.95      0.642     0.766      0.845    3
+                 0.333     0.006      0.881     0.333     0.483      0.719    4
+                 0.987     0.512      0.728     0.987     0.838      0.741    5
+Weighted Avg.    0.772     0.299      0.783     0.772     0.736      0.755
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1272    1    3    5   11  670 |    a = 0
+    1    0    0    1    1  387 |    b = 1
+    3    0   62    3    5  381 |    c = 2
+   11    1    1  763    3  409 |    d = 3
+   18    0    0    8  479  934 |    e = 4
+   23    4    6   23   45 7439 |    f = 5
+

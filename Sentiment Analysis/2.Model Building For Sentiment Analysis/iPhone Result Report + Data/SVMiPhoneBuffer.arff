@@ -1,0 +1,793 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
+Relation:     iphone_smallmatrix_labeled_8d-weka.filters.unsupervised.attribute.NumericToNominal-R59-weka.filters.unsupervised.attribute.Remove-R4,11,15-16,20-21,26,30-31,35-36,40-41,45-46,50-51,53,55,57
+Instances:    12973
+Attributes:   39
+              iphone
+              samsunggalaxy
+              sonyxperia
+              htcphone
+              ios
+              googleandroid
+              iphonecampos
+              samsungcampos
+              sonycampos
+              htccampos
+              iphonecamneg
+              samsungcamneg
+              htccamneg
+              iphonecamunc
+              samsungcamunc
+              htccamunc
+              iphonedispos
+              samsungdispos
+              sonydispos
+              htcdispos
+              iphonedisneg
+              samsungdisneg
+              htcdisneg
+              iphonedisunc
+              samsungdisunc
+              htcdisunc
+              iphoneperpos
+              samsungperpos
+              htcperpos
+              iphoneperneg
+              samsungperneg
+              htcperneg
+              iphoneperunc
+              samsungperunc
+              htcperunc
+              googleperpos
+              googleperneg
+              googleperunc
+              iphonesentiment
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0019 * (normalized) iphone
+ +      -0.0007 * (normalized) samsunggalaxy
+ +      -0.0317 * (normalized) sonyxperia
+ +      -0.0845 * (normalized) htcphone
+ +      -0.0024 * (normalized) ios
+ +       0.0053 * (normalized) googleandroid
+ +      -0.0159 * (normalized) iphonecampos
+ +       0.0024 * (normalized) samsungcampos
+ +       0.0073 * (normalized) sonycampos
+ +      -0.0104 * (normalized) htccampos
+ +       0.0001 * (normalized) iphonecamneg
+ +      -0.0006 * (normalized) samsungcamneg
+ +      -0.0024 * (normalized) htccamneg
+ +       0.023  * (normalized) iphonecamunc
+ +      -0.0077 * (normalized) samsungcamunc
+ +      -0.0108 * (normalized) htccamunc
+ +      -0.0217 * (normalized) iphonedispos
+ +       0.004  * (normalized) samsungdispos
+ +       0.0065 * (normalized) sonydispos
+ +      -0.0019 * (normalized) htcdispos
+ +      -0.0253 * (normalized) iphonedisneg
+ +      -0.0072 * (normalized) samsungdisneg
+ +       0.0026 * (normalized) htcdisneg
+ +       0.061  * (normalized) iphonedisunc
+ +      -0.0084 * (normalized) samsungdisunc
+ +      -0.0238 * (normalized) htcdisunc
+ +      -0.0014 * (normalized) iphoneperpos
+ +       0.0021 * (normalized) samsungperpos
+ +       0.0089 * (normalized) htcperpos
+ +       0.0081 * (normalized) iphoneperneg
+ +       0      * (normalized) samsungperneg
+ +      -0.005  * (normalized) htcperneg
+ +      -0.0105 * (normalized) iphoneperunc
+ +      -0.0028 * (normalized) samsungperunc
+ +      -0.0136 * (normalized) htcperunc
+ +      -0.0203 * (normalized) googleperpos
+ +      -0.001  * (normalized) googleperneg
+ +      -0.0203 * (normalized) googleperunc
+ -       1     
+
+Number of kernel evaluations: 122089 (65.344% cached)
+
+Classifier for classes: 0, 2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0072 * (normalized) iphone
+ +      -0.6969 * (normalized) samsunggalaxy
+ +      -0.0109 * (normalized) sonyxperia
+ +      -0.1366 * (normalized) htcphone
+ +      -0.0032 * (normalized) ios
+ +       6.6417 * (normalized) googleandroid
+ +      -0.023  * (normalized) iphonecampos
+ +      -0.3496 * (normalized) samsungcampos
+ +      -0.126  * (normalized) sonycampos
+ +      -0.1457 * (normalized) htccampos
+ +      -0.5991 * (normalized) iphonecamneg
+ +      -2.2279 * (normalized) samsungcamneg
+ +      -1.8036 * (normalized) htccamneg
+ +       0.1361 * (normalized) iphonecamunc
+ +      -0.6886 * (normalized) samsungcamunc
+ +      -0.3287 * (normalized) htccamunc
+ +       0.0237 * (normalized) iphonedispos
+ +      -0.4064 * (normalized) samsungdispos
+ +       0.0191 * (normalized) sonydispos
+ +      -0.0333 * (normalized) htcdispos
+ +       0.1501 * (normalized) iphonedisneg
+ +      -0.7266 * (normalized) samsungdisneg
+ +      -0.7266 * (normalized) htcdisneg
+ +       0.3949 * (normalized) iphonedisunc
+ +      -0.1565 * (normalized) samsungdisunc
+ +      -0.1179 * (normalized) htcdisunc
+ +      -0.0298 * (normalized) iphoneperpos
+ +      -0.3285 * (normalized) samsungperpos
+ +      -0.2294 * (normalized) htcperpos
+ +       0.061  * (normalized) iphoneperneg
+ +      -1.0568 * (normalized) samsungperneg
+ +      -0.6326 * (normalized) htcperneg
+ +       0.0089 * (normalized) iphoneperunc
+ +      -0.1798 * (normalized) samsungperunc
+ +      -0.0977 * (normalized) htcperunc
+ +      -0.7802 * (normalized) googleperpos
+ +      -1.395  * (normalized) googleperneg
+ +      -0.4406 * (normalized) googleperunc
+ -       0.9994
+
+Number of kernel evaluations: 63414 (72.14% cached)
+
+Classifier for classes: 0, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.4175 * (normalized) iphone
+ +      -0.3099 * (normalized) samsunggalaxy
+ +      -2.3617 * (normalized) sonyxperia
+ +      -0.6787 * (normalized) htcphone
+ +      -0.3376 * (normalized) ios
+ +      10.8248 * (normalized) googleandroid
+ +      -0.4125 * (normalized) iphonecampos
+ +      -0.8591 * (normalized) samsungcampos
+ +      -0.2049 * (normalized) sonycampos
+ +      -0.4423 * (normalized) htccampos
+ +      -2.0522 * (normalized) iphonecamneg
+ +      -5.9024 * (normalized) samsungcamneg
+ +      -1.7359 * (normalized) htccamneg
+ +       0.6353 * (normalized) iphonecamunc
+ +      -1.781  * (normalized) samsungcamunc
+ +       0.2338 * (normalized) htccamunc
+ +       4.0213 * (normalized) iphonedispos
+ +      -0.9844 * (normalized) samsungdispos
+ +       0.0625 * (normalized) sonydispos
+ +      -0.201  * (normalized) htcdispos
+ +      -0.3371 * (normalized) iphonedisneg
+ +      -1.8821 * (normalized) samsungdisneg
+ +      -0.3807 * (normalized) htcdisneg
+ +       3.7296 * (normalized) iphonedisunc
+ +      -0.2073 * (normalized) samsungdisunc
+ +       0.0634 * (normalized) htcdisunc
+ +      -1.567  * (normalized) iphoneperpos
+ +      -1.052  * (normalized) samsungperpos
+ +      -1.0735 * (normalized) htcperpos
+ +      -1.6354 * (normalized) iphoneperneg
+ +      -2.98   * (normalized) samsungperneg
+ +      -1.0888 * (normalized) htcperneg
+ +       0.607  * (normalized) iphoneperunc
+ +      -0.5183 * (normalized) samsungperunc
+ +       0.0678 * (normalized) htcperunc
+ +      -3.0502 * (normalized) googleperpos
+ +      -4.5336 * (normalized) googleperneg
+ +      -1.2112 * (normalized) googleperunc
+ -       0.9437
+
+Number of kernel evaluations: 196214 (78.817% cached)
+
+Classifier for classes: 0, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         6.9137 * (normalized) iphone
+ +      -2.4008 * (normalized) samsunggalaxy
+ +      -0.7221 * (normalized) sonyxperia
+ +      -0.537  * (normalized) htcphone
+ +      -0.5433 * (normalized) ios
+ +      -1.8324 * (normalized) googleandroid
+ +       0.1102 * (normalized) iphonecampos
+ +       0.6262 * (normalized) samsungcampos
+ +      -0.4547 * (normalized) sonycampos
+ +      -0.9875 * (normalized) htccampos
+ +       1.3391 * (normalized) iphonecamneg
+ +      -2.045  * (normalized) samsungcamneg
+ +      -2.9201 * (normalized) htccamneg
+ +       1.6837 * (normalized) iphonecamunc
+ +       0.3176 * (normalized) samsungcamunc
+ +      -1.2647 * (normalized) htccamunc
+ +       2.6956 * (normalized) iphonedispos
+ +       0.6642 * (normalized) samsungdispos
+ +      -0.0677 * (normalized) sonydispos
+ +      -0.3388 * (normalized) htcdispos
+ +       1.935  * (normalized) iphonedisneg
+ +      -0.3401 * (normalized) samsungdisneg
+ +      -0.8003 * (normalized) htcdisneg
+ +       2.8723 * (normalized) iphonedisunc
+ +       0.384  * (normalized) samsungdisunc
+ +      -0.7464 * (normalized) htcdisunc
+ +       1.0149 * (normalized) iphoneperpos
+ +       1.5813 * (normalized) samsungperpos
+ +      -1.6305 * (normalized) htcperpos
+ +       2.2636 * (normalized) iphoneperneg
+ +      -0.2528 * (normalized) samsungperneg
+ +      -1.4075 * (normalized) htcperneg
+ +       3.7604 * (normalized) iphoneperunc
+ +       0.8086 * (normalized) samsungperunc
+ +      -0.1191 * (normalized) htcperunc
+ +      -0.083  * (normalized) googleperpos
+ +      -1.1194 * (normalized) googleperneg
+ +       0.2085 * (normalized) googleperunc
+ -       0.9101
+
+Number of kernel evaluations: 290806 (65.955% cached)
+
+Classifier for classes: 0, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        10.3025 * (normalized) iphone
+ +     -14.2016 * (normalized) samsunggalaxy
+ +      -3.5786 * (normalized) sonyxperia
+ +      -0.9411 * (normalized) htcphone
+ +      -0.0119 * (normalized) ios
+ +      -0.496  * (normalized) googleandroid
+ +      -0.0077 * (normalized) iphonecampos
+ +      -0.0699 * (normalized) samsungcampos
+ +      -0.8463 * (normalized) sonycampos
+ +      -1.7043 * (normalized) htccampos
+ +      -0.0026 * (normalized) iphonecamneg
+ +      -0.0881 * (normalized) samsungcamneg
+ +      -5.2381 * (normalized) htccamneg
+ +       0.0018 * (normalized) iphonecamunc
+ +      -0.2752 * (normalized) samsungcamunc
+ +      -4.25   * (normalized) htccamunc
+ +      -0.0032 * (normalized) iphonedispos
+ +       0.2722 * (normalized) samsungdispos
+ +      -0.5607 * (normalized) sonydispos
+ +      -0.8349 * (normalized) htcdispos
+ +      -0.0066 * (normalized) iphonedisneg
+ +      -0.0017 * (normalized) samsungdisneg
+ +      -4.25   * (normalized) htcdisneg
+ +      -0.0007 * (normalized) iphonedisunc
+ +      -0.1619 * (normalized) samsungdisunc
+ +      -3.9197 * (normalized) htcdisunc
+ +      -0.0006 * (normalized) iphoneperpos
+ +       0.0507 * (normalized) samsungperpos
+ +      -5.2231 * (normalized) htcperpos
+ +       0.0006 * (normalized) iphoneperneg
+ +       0.4395 * (normalized) samsungperneg
+ +      -6.466  * (normalized) htcperneg
+ +       0.0164 * (normalized) iphoneperunc
+ +      -0.0375 * (normalized) samsungperunc
+ +      -2.0742 * (normalized) htcperunc
+ +      -0.2413 * (normalized) googleperpos
+ +       0.08   * (normalized) googleperneg
+ +      -0.3081 * (normalized) googleperunc
+ +       0.7762
+
+Number of kernel evaluations: 2191283 (59.153% cached)
+
+Classifier for classes: 1, 2
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.1158 * (normalized) iphone
+ +       0.0007 * (normalized) htcphone
+ +       0.3357 * (normalized) ios
+ +       0.7037 * (normalized) googleandroid
+ +      -0.0577 * (normalized) iphonecampos
+ +      -0.0308 * (normalized) samsungcampos
+ +      -0.0064 * (normalized) htccampos
+ +      -0.1613 * (normalized) iphonecamneg
+ +      -0.1111 * (normalized) iphonecamunc
+ +       0.05   * (normalized) htccamunc
+ +      -0.1524 * (normalized) iphonedispos
+ +       0      * (normalized) samsungdispos
+ +       0.0313 * (normalized) sonydispos
+ +       0.0132 * (normalized) htcdispos
+ +       0.1644 * (normalized) iphonedisneg
+ +       0.0625 * (normalized) samsungdisneg
+ +       0.0069 * (normalized) htcdisneg
+ +       0.0526 * (normalized) iphonedisunc
+ +       0.0238 * (normalized) samsungdisunc
+ +       0.0714 * (normalized) htcdisunc
+ +       0.0859 * (normalized) iphoneperpos
+ +       0.0351 * (normalized) samsungperpos
+ +       0.0356 * (normalized) htcperpos
+ +       0.0539 * (normalized) iphoneperneg
+ +       0.0909 * (normalized) samsungperneg
+ +       0.1595 * (normalized) htcperneg
+ +       0.3616 * (normalized) iphoneperunc
+ +       0.0645 * (normalized) samsungperunc
+ +       0.0339 * (normalized) htcperunc
+ +       0.0004 * (normalized) googleperpos
+ +       0      * (normalized) googleperneg
+ +       0      * (normalized) googleperunc
+ +       0.8834
+
+Number of kernel evaluations: 15067 (64.909% cached)
+
+Classifier for classes: 1, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3134 * (normalized) iphone
+ +       0.0567 * (normalized) samsunggalaxy
+ +       0.0686 * (normalized) sonyxperia
+ +       0.0036 * (normalized) htcphone
+ +      -0.0004 * (normalized) ios
+ +       0.0177 * (normalized) googleandroid
+ +      -0.1236 * (normalized) iphonecampos
+ +      -0.0277 * (normalized) samsungcampos
+ +      -0.0472 * (normalized) sonycampos
+ +       0.0007 * (normalized) htccampos
+ +      -0.1162 * (normalized) iphonecamneg
+ +       0      * (normalized) samsungcamneg
+ +       0.2434 * (normalized) htccamneg
+ +      -0.1903 * (normalized) iphonecamunc
+ +       0.1555 * (normalized) htccamunc
+ +      -0.0234 * (normalized) iphonedispos
+ +      -0.0391 * (normalized) samsungdispos
+ +       0.0195 * (normalized) sonydispos
+ +       0.0068 * (normalized) htcdispos
+ +      -0.243  * (normalized) iphonedisneg
+ +       0      * (normalized) samsungdisneg
+ +       0.2335 * (normalized) htcdisneg
+ +       0.105  * (normalized) iphonedisunc
+ +       0      * (normalized) samsungdisunc
+ +       0.1257 * (normalized) htcdisunc
+ +      -0.32   * (normalized) iphoneperpos
+ +      -0.0092 * (normalized) samsungperpos
+ +       0.0377 * (normalized) htcperpos
+ +      -0.7748 * (normalized) iphoneperneg
+ +       0      * (normalized) samsungperneg
+ +       0.5585 * (normalized) htcperneg
+ +       0.0068 * (normalized) iphoneperunc
+ +       0      * (normalized) samsungperunc
+ +       0.0674 * (normalized) htcperunc
+ +       1.0252
+
+Number of kernel evaluations: 41876 (52.663% cached)
+
+Classifier for classes: 1, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0063 * (normalized) iphone
+ +      -0.0031 * (normalized) samsunggalaxy
+ +       0.0255 * (normalized) sonyxperia
+ +      -0.0076 * (normalized) htcphone
+ +       0.0035 * (normalized) ios
+ +      -0.0077 * (normalized) googleandroid
+ +      -0.011  * (normalized) iphonecampos
+ +      -0.0035 * (normalized) samsungcampos
+ +      -0.0259 * (normalized) sonycampos
+ +       0.0082 * (normalized) htccampos
+ +       0.0069 * (normalized) iphonecamneg
+ +       0      * (normalized) samsungcamneg
+ +       0.0313 * (normalized) htccamneg
+ +       0.0027 * (normalized) iphonecamunc
+ +       0.035  * (normalized) samsungcamunc
+ +       0.0193 * (normalized) htccamunc
+ +      -0.0049 * (normalized) iphonedispos
+ +      -0.0081 * (normalized) samsungdispos
+ +      -0.0001 * (normalized) sonydispos
+ +       0.0038 * (normalized) htcdispos
+ +       0.0066 * (normalized) iphonedisneg
+ +       0.0124 * (normalized) samsungdisneg
+ +       0.0005 * (normalized) htcdisneg
+ +       0.008  * (normalized) iphonedisunc
+ +       0.0046 * (normalized) samsungdisunc
+ +       0.0212 * (normalized) htcdisunc
+ +       0      * (normalized) iphoneperpos
+ +      -0.008  * (normalized) samsungperpos
+ +       0.0193 * (normalized) htcperpos
+ +      -0.0029 * (normalized) iphoneperneg
+ +       0      * (normalized) samsungperneg
+ +      -0.004  * (normalized) htcperneg
+ +       0.001  * (normalized) iphoneperunc
+ +       0.0124 * (normalized) samsungperunc
+ +       0.0124 * (normalized) htcperunc
+ +       0.0069 * (normalized) googleperpos
+ +       0.0075 * (normalized) googleperneg
+ +       0      * (normalized) googleperunc
+ +       1.0004
+
+Number of kernel evaluations: 295264 (70.977% cached)
+
+Classifier for classes: 1, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0006 * (normalized) iphone
+ +       0.0083 * (normalized) samsunggalaxy
+ +      -0.0006 * (normalized) sonyxperia
+ +      -0.0014 * (normalized) htcphone
+ +       0.0005 * (normalized) ios
+ +      -0.0018 * (normalized) googleandroid
+ +       0.007  * (normalized) iphonecampos
+ +      -0.0054 * (normalized) samsungcampos
+ +      -0.0046 * (normalized) sonycampos
+ +      -0.0019 * (normalized) htccampos
+ +      -0.0004 * (normalized) iphonecamneg
+ +       0.0058 * (normalized) htccamneg
+ +      -0.0027 * (normalized) iphonecamunc
+ +      -0.0011 * (normalized) iphonedispos
+ +      -0.004  * (normalized) samsungdispos
+ +       0.0143 * (normalized) sonydispos
+ +      -0.0022 * (normalized) htcdispos
+ +       0.0017 * (normalized) iphonedisneg
+ +       0.02   * (normalized) samsungdisneg
+ +       0.0031 * (normalized) htcdisneg
+ +       0.0041 * (normalized) iphonedisunc
+ +       0.0005 * (normalized) htcdisunc
+ +       0.0027 * (normalized) iphoneperpos
+ +      -0.0071 * (normalized) samsungperpos
+ +      -0.0172 * (normalized) htcperpos
+ +       0.0001 * (normalized) iphoneperneg
+ +       0.0072 * (normalized) samsungperneg
+ +      -0.0005 * (normalized) htcperneg
+ +      -0.0019 * (normalized) iphoneperunc
+ +       0.0142 * (normalized) htcperunc
+ +       0.0165 * (normalized) googleperpos
+ +       0      * (normalized) googleperneg
+ +       0.0082 * (normalized) googleperunc
+ +       0.9996
+
+Number of kernel evaluations: 134578 (52.165% cached)
+
+Classifier for classes: 2, 3
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0287 * (normalized) iphone
+ +       0.0093 * (normalized) samsunggalaxy
+ +       0.0988 * (normalized) sonyxperia
+ +       0.0038 * (normalized) htcphone
+ +       0      * (normalized) ios
+ +       0.004  * (normalized) googleandroid
+ +      -0.0528 * (normalized) iphonecampos
+ +       0      * (normalized) samsungcampos
+ +      -0.0525 * (normalized) sonycampos
+ +       0.0095 * (normalized) htccampos
+ +       0.1422 * (normalized) iphonecamneg
+ +       0      * (normalized) samsungcamneg
+ +       0.4042 * (normalized) htccamneg
+ +      -0.0208 * (normalized) iphonecamunc
+ +       0      * (normalized) samsungcamunc
+ +       0.2244 * (normalized) htccamunc
+ +      -0.0034 * (normalized) iphonedispos
+ +       0.0345 * (normalized) samsungdispos
+ +      -0.0131 * (normalized) sonydispos
+ +       0.0319 * (normalized) htcdispos
+ +      -0.4636 * (normalized) iphonedisneg
+ +      -0.0312 * (normalized) samsungdisneg
+ +       0.8011 * (normalized) htcdisneg
+ +       0.0549 * (normalized) iphonedisunc
+ +      -0.0059 * (normalized) samsungdisunc
+ +       0.5414 * (normalized) htcdisunc
+ +      -0.8071 * (normalized) iphoneperpos
+ +      -0.0087 * (normalized) samsungperpos
+ +       0.1981 * (normalized) htcperpos
+ +      -1.7078 * (normalized) iphoneperneg
+ +      -0.0454 * (normalized) samsungperneg
+ +       0.7164 * (normalized) htcperneg
+ +      -0.2677 * (normalized) iphoneperunc
+ +      -0.016  * (normalized) samsungperunc
+ +       0.3509 * (normalized) htcperunc
+ +      -0.75   * (normalized) googleperpos
+ +      -0.6    * (normalized) googleperneg
+ +      -0.375  * (normalized) googleperunc
+ +       1.0019
+
+Number of kernel evaluations: 26482 (67.02% cached)
+
+Classifier for classes: 2, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0002 * (normalized) iphone
+ +       0.25   * (normalized) samsunggalaxy
+ +       0.023  * (normalized) htcphone
+ +       0.0003 * (normalized) ios
+ +      -6.3333 * (normalized) googleandroid
+ +       0.0024 * (normalized) iphonecampos
+ +       0.2154 * (normalized) samsungcampos
+ +       0.141  * (normalized) htccampos
+ +       0.2559 * (normalized) iphonecamneg
+ +       1.1765 * (normalized) samsungcamneg
+ +       1.3333 * (normalized) htccamneg
+ +      -0.0587 * (normalized) iphonecamunc
+ +       0.3636 * (normalized) samsungcamunc
+ +       0.2    * (normalized) htccamunc
+ +       0.0081 * (normalized) iphonedispos
+ +       0.2353 * (normalized) samsungdispos
+ +       0.0313 * (normalized) sonydispos
+ +       0.0292 * (normalized) htcdispos
+ +      -0.0263 * (normalized) iphonedisneg
+ +       0.3542 * (normalized) samsungdisneg
+ +       0.5833 * (normalized) htcdisneg
+ +       0.0075 * (normalized) iphonedisunc
+ +       0.0714 * (normalized) samsungdisunc
+ +       0.0952 * (normalized) htcdisunc
+ +      -0.0027 * (normalized) iphoneperpos
+ +       0.1404 * (normalized) samsungperpos
+ +       0.2462 * (normalized) htcperpos
+ +       0.0031 * (normalized) iphoneperneg
+ +       0.5455 * (normalized) samsungperneg
+ +       0.4242 * (normalized) htcperneg
+ +      -0.0034 * (normalized) iphoneperunc
+ +       0.0645 * (normalized) samsungperunc
+ +       0.1525 * (normalized) htcperunc
+ +       1.1667 * (normalized) googleperpos
+ +       1.6    * (normalized) googleperneg
+ +       0.5833 * (normalized) googleperunc
+ +       1.0002
+
+Number of kernel evaluations: 210871 (77.54% cached)
+
+Classifier for classes: 2, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0      * (normalized) iphone
+ +       0.0072 * (normalized) samsunggalaxy
+ +       0.0078 * (normalized) sonyxperia
+ +       0.0099 * (normalized) htcphone
+ +       0.0008 * (normalized) ios
+ +      -9      * (normalized) googleandroid
+ +       0.0292 * (normalized) iphonecampos
+ +       0.0077 * (normalized) samsungcampos
+ +      -0.0147 * (normalized) sonycampos
+ +      -0.0023 * (normalized) htccampos
+ +      -0.0018 * (normalized) iphonecamneg
+ +       0.0414 * (normalized) htccamneg
+ +      -0.0012 * (normalized) iphonecamunc
+ +       0      * (normalized) samsungcamunc
+ +      -0.0048 * (normalized) htccamunc
+ +       0.0002 * (normalized) iphonedispos
+ +       0.0043 * (normalized) samsungdispos
+ +       0.024  * (normalized) sonydispos
+ +      -0.0107 * (normalized) htcdispos
+ +      -0.0006 * (normalized) iphonedisneg
+ +      -0.0312 * (normalized) samsungdisneg
+ +       0.0168 * (normalized) htcdisneg
+ +      -0.0008 * (normalized) iphonedisunc
+ +      -0.0017 * (normalized) samsungdisunc
+ +      -0.0271 * (normalized) htcdisunc
+ +      -0.0014 * (normalized) iphoneperpos
+ +      -0.0029 * (normalized) samsungperpos
+ +      -0.0128 * (normalized) htcperpos
+ +       0.0006 * (normalized) iphoneperneg
+ +      -0.005  * (normalized) samsungperneg
+ +      -0.0458 * (normalized) htcperneg
+ +      -0.0019 * (normalized) iphoneperunc
+ +      -0.0043 * (normalized) samsungperunc
+ +       0.0937 * (normalized) htcperunc
+ +      -0.25   * (normalized) googleperpos
+ +       0.04   * (normalized) googleperneg
+ +      -0.0833 * (normalized) googleperunc
+ +       1.0002
+
+Number of kernel evaluations: 213684 (59.14% cached)
+
+Classifier for classes: 3, 4
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         4.0473 * (normalized) iphone
+ +      -8.7862 * (normalized) samsunggalaxy
+ +       0.5    * (normalized) sonyxperia
+ +       0.0879 * (normalized) htcphone
+ +      -1.2    * (normalized) ios
+ +      -6.0598 * (normalized) googleandroid
+ +       0.9588 * (normalized) iphonecampos
+ +       0.3839 * (normalized) samsungcampos
+ +       0.5    * (normalized) sonycampos
+ +       0      * (normalized) htccampos
+ +       3.1587 * (normalized) iphonecamneg
+ +       1.1546 * (normalized) samsungcamneg
+ +      -0.8262 * (normalized) htccamneg
+ +       1.0604 * (normalized) iphonecamunc
+ +       1.4504 * (normalized) samsungcamunc
+ +      -1.8725 * (normalized) htccamunc
+ +      -0.6679 * (normalized) iphonedispos
+ +       0.6763 * (normalized) samsungdispos
+ +       0      * (normalized) sonydispos
+ +      -0.136  * (normalized) htcdispos
+ +       2.2823 * (normalized) iphonedisneg
+ +       0.5049 * (normalized) samsungdisneg
+ +      -1.2718 * (normalized) htcdisneg
+ +      -1.1026 * (normalized) iphonedisunc
+ +       0.267  * (normalized) samsungdisunc
+ +      -2.1125 * (normalized) htcdisunc
+ +       3.6938 * (normalized) iphoneperpos
+ +       0.5072 * (normalized) samsungperpos
+ +      -0.0794 * (normalized) htcperpos
+ +       3.2789 * (normalized) iphoneperneg
+ +       0.7654 * (normalized) samsungperneg
+ +      -0.5904 * (normalized) htcperneg
+ +       1.6136 * (normalized) iphoneperunc
+ +       0.3954 * (normalized) samsungperunc
+ +      -0.6394 * (normalized) htcperunc
+ +       1.4333 * (normalized) googleperpos
+ +       1.736  * (normalized) googleperneg
+ +       0.665  * (normalized) googleperunc
+ -       0.078 
+
+Number of kernel evaluations: 85977 (62.685% cached)
+
+Classifier for classes: 3, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0001 * (normalized) iphone
+ +     -16.0009 * (normalized) samsunggalaxy
+ +       1.625  * (normalized) sonyxperia
+ +       0.0324 * (normalized) htcphone
+ +       0.0008 * (normalized) ios
+ +     -12.001  * (normalized) googleandroid
+ +       0.0404 * (normalized) iphonecampos
+ +       0.2    * (normalized) samsungcampos
+ +       0.375  * (normalized) sonycampos
+ +      -0.2372 * (normalized) htccampos
+ +      -0.0004 * (normalized) iphonecamneg
+ +       0.2941 * (normalized) samsungcamneg
+ +      -1.5714 * (normalized) htccamneg
+ +      -0.0074 * (normalized) iphonecamunc
+ +       0.4545 * (normalized) samsungcamunc
+ +      -2.45   * (normalized) htccamunc
+ +      -0.0016 * (normalized) iphonedispos
+ +       0.9412 * (normalized) samsungdispos
+ +       0.1875 * (normalized) sonydispos
+ +      -0.2001 * (normalized) htcdispos
+ +       0.01   * (normalized) iphonedisneg
+ +       0.375  * (normalized) samsungdisneg
+ +      -2.1042 * (normalized) htcdisneg
+ +      -0.0066 * (normalized) iphonedisunc
+ +       0.1429 * (normalized) samsungdisunc
+ +      -1.9762 * (normalized) htcdisunc
+ +       0.0032 * (normalized) iphoneperpos
+ +       1.0175 * (normalized) samsungperpos
+ +      -0.1231 * (normalized) htcperpos
+ +      -0.0008 * (normalized) iphoneperneg
+ +       0.6667 * (normalized) samsungperneg
+ +      -1.3939 * (normalized) htcperneg
+ +      -0.0009 * (normalized) iphoneperunc
+ +       0.3548 * (normalized) samsungperunc
+ +      -0.4576 * (normalized) htcperunc
+ +       0.3333 * (normalized) googleperpos
+ +       0.48   * (normalized) googleperneg
+ +       0.125  * (normalized) googleperunc
+ +       1.0002
+
+Number of kernel evaluations: 534194 (62.337% cached)
+
+Classifier for classes: 4, 5
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3393 * (normalized) iphone
+ +       0.3975 * (normalized) samsunggalaxy
+ +      -0.3209 * (normalized) sonyxperia
+ +      -0.0757 * (normalized) htcphone
+ +      -1.1277 * (normalized) ios
+ +      -1.4176 * (normalized) googleandroid
+ +       0.0767 * (normalized) iphonecampos
+ +      -0.154  * (normalized) samsungcampos
+ +      -0.25   * (normalized) sonycampos
+ +      -0.2146 * (normalized) htccampos
+ +      -0.9306 * (normalized) iphonecamneg
+ +      -0.3097 * (normalized) samsungcamneg
+ +      -0.9446 * (normalized) htccamneg
+ +      -2.735  * (normalized) iphonecamunc
+ +      -1.4775 * (normalized) samsungcamunc
+ +      -0.8698 * (normalized) htccamunc
+ +      -0.2974 * (normalized) iphonedispos
+ +      -0.5162 * (normalized) samsungdispos
+ +       0.1073 * (normalized) sonydispos
+ +      -0.0971 * (normalized) htcdispos
+ +      -0.5279 * (normalized) iphonedisneg
+ +      -0.5263 * (normalized) samsungdisneg
+ +      -1.2674 * (normalized) htcdisneg
+ +      -1.1217 * (normalized) iphonedisunc
+ +      -0.6251 * (normalized) samsungdisunc
+ +      -0.4775 * (normalized) htcdisunc
+ +       0.5981 * (normalized) iphoneperpos
+ +      -0.532  * (normalized) samsungperpos
+ +      -0.6156 * (normalized) htcperpos
+ +       0.8888 * (normalized) iphoneperneg
+ +      -0.6141 * (normalized) samsungperneg
+ +      -1.2574 * (normalized) htcperneg
+ +      -0.7237 * (normalized) iphoneperunc
+ +      -0.6533 * (normalized) samsungperunc
+ +      -0.1287 * (normalized) htcperunc
+ +      -0.9483 * (normalized) googleperpos
+ +      -0.7706 * (normalized) googleperneg
+ +      -0.5105 * (normalized) googleperunc
+ +       1.0221
+
+Number of kernel evaluations: 2622058 (70.526% cached)
+
+
+
+Time taken to build model: 4.4 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8639               66.5922 %
+Incorrectly Classified Instances      4334               33.4078 %
+Kappa statistic                          0.2945
+Mean absolute error                      0.2391
+Root mean squared error                  0.3363
+Relative absolute error                116.3213 %
+Root relative squared error            104.9225 %
+Total Number of Instances            12973     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.394     0.031      0.696     0.394     0.503      0.702    0
+                 0         0          0         0         0          0.5      1
+                 0.002     0          1         0.002     0.004      0.56     2
+                 0.118     0.006      0.648     0.118     0.199      0.649    3
+                 0.178     0.001      0.948     0.178     0.3        0.674    4
+                 0.991     0.719      0.657     0.991     0.79       0.636    5
+Weighted Avg.    0.666     0.423      0.686     0.666     0.587      0.644
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+  773    0    0    4    1 1184 |    a = 0
+    2    0    0    1    0  387 |    b = 1
+    4    0    1   63    0  386 |    c = 2
+  228    0    0  140    8  812 |    d = 3
+   41    0    0    4  256 1138 |    e = 4
+   62    0    0    4    5 7469 |    f = 5
+

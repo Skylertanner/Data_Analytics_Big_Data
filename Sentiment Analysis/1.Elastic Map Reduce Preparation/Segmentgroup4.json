@@ -1,0 +1,642 @@
+[
+{
+"Name": "BM_2_1350433107090_textData-000[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-000[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-000[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-001[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-001[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-001[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-002[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-002[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-002[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-003[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-003[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-003[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-004[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-004[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-004[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-005[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-005[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-005[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-006[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-006[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-006[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-007[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-007[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-007[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-008[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-008[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-008[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107090_textData-009[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107090/textData-009[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107090_textData-009[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-000[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-000[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-000[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-001[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-001[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-001[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-002[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-002[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-002[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-003[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-003[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-003[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-004[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-004[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-004[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-005[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-005[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-005[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-006[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-006[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-006[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-007[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-007[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-007[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-008[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-008[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-008[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107091_textData-009[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107091/textData-009[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107091_textData-009[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-000[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-000[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-000[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-001[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-001[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-001[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-002[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-002[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-002[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-003[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-003[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-003[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-004[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-004[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-004[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-005[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-005[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-005[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-006[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-006[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-006[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-007[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-007[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-007[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-008[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-008[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-008[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107092_textData-009[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107092/textData-009[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107092_textData-009[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-000[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-000[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-000[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-001[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-001[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-001[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-002[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-002[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-002[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-003[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-003[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-003[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-004[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-004[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-004[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-005[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-005[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-005[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-006[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-006[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-006[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-007[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-007[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-007[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-008[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-008[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-008[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+{
+"Name": "BM_2_1350433107093_textData-009[0-9][0-9]",
+"ActionOnFailure": "CONTINUE",
+"HadoopJarStep":
+{
+"Jar": "/home/hadoop/contrib/streaming/hadoop-streaming.jar",
+"Args":
+[
+"-input", "s3://aws-publicdatasets/common-crawl/parse-output/segment/1350433107093/textData-009[0-9][0-9]",
+"-output", "s3://skylers3commoncrawloutputbucket/ScriptOutput/RR_1_1350433107093_textData-009[0-9][0-9]",
+"-mapper", "s3://skylers3mapperandreducerscriptsbucket/Mapper.py",
+"-reducer", "s3://skylers3mapperandreducerscriptsbucket/Reducer.py",
+"-inputformat", "SequenceFileAsTextInputFormat"
+]
+}
+},
+]

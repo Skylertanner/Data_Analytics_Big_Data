@@ -1,0 +1,109 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.RandomForest -I 10 -K 0 -S 1
+Relation:     galaxy_smallmatrix_labeled_8d-weka.filters.unsupervised.attribute.NumericToNominal-R59
+Instances:    12973
+Attributes:   59
+              iphone
+              samsunggalaxy
+              sonyxperia
+              nokialumia
+              htcphone
+              ios
+              googleandroid
+              iphonecampos
+              samsungcampos
+              sonycampos
+              nokiacampos
+              htccampos
+              iphonecamneg
+              samsungcamneg
+              sonycamneg
+              nokiacamneg
+              htccamneg
+              iphonecamunc
+              samsungcamunc
+              sonycamunc
+              nokiacamunc
+              htccamunc
+              iphonedispos
+              samsungdispos
+              sonydispos
+              nokiadispos
+              htcdispos
+              iphonedisneg
+              samsungdisneg
+              sonydisneg
+              nokiadisneg
+              htcdisneg
+              iphonedisunc
+              samsungdisunc
+              sonydisunc
+              nokiadisunc
+              htcdisunc
+              iphoneperpos
+              samsungperpos
+              sonyperpos
+              nokiaperpos
+              htcperpos
+              iphoneperneg
+              samsungperneg
+              sonyperneg
+              nokiaperneg
+              htcperneg
+              iphoneperunc
+              samsungperunc
+              sonyperunc
+              nokiaperunc
+              htcperunc
+              iosperpos
+              googleperpos
+              iosperneg
+              googleperneg
+              iosperunc
+              googleperunc
+              galaxysentiment
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Random forest of 10 trees, each constructed while considering 6 random features.
+Out of bag error: 0.2288
+
+
+
+Time taken to build model: 4.26 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       10231               78.8638 %
+Incorrectly Classified Instances      2742               21.1362 %
+Kappa statistic                          0.5836
+Mean absolute error                      0.1138
+Root mean squared error                  0.2438
+Relative absolute error                 57.0069 %
+Root relative squared error             77.178  %
+Total Number of Instances            12973     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.753     0.006      0.951     0.753     0.841      0.888    0
+                 0.003     0.002      0.04      0.003     0.005      0.597    1
+                 0.137     0.003      0.646     0.137     0.225      0.619    2
+                 0.659     0.004      0.937     0.659     0.774      0.865    3
+                 0.336     0.008      0.84      0.336     0.48       0.725    4
+                 0.977     0.478      0.755     0.977     0.852      0.757    5
+Weighted Avg.    0.789     0.29       0.781     0.789     0.754      0.771
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1283    1    0    5    9  405 |    a = 0
+    1    1    3    2    3  380 |    b = 1
+    2    2   62    3    5  380 |    c = 2
+   12    1    1  783    6  385 |    d = 3
+   16    5    3    9  483  923 |    e = 4
+   35   15   27   34   69 7619 |    f = 5
+
