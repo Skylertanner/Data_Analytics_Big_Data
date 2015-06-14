@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:weka.classifiers.lazy.IBk -K 24 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     weka.datagenerators.classifiers.classification.Agrawal-S_16_-n_10000_-F_2_-P_0.05-weka.filters.unsupervised.attribute.Remove-R7-8-weka.filters.unsupervised.attribute.Remove-R2
+Instances:    10000
+Attributes:   7
+              salary
+              age
+              elevel
+              car
+              zipcode
+              credit
+              brand
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 24 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8230               82.3    %
+Incorrectly Classified Instances      1770               17.7    %
+Kappa statistic                          0.616 
+Mean absolute error                      0.3519
+Root mean squared error                  0.3852
+Relative absolute error                 74.8016 %
+Root relative squared error             79.4382 %
+Total Number of Instances            10000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.715     0.111      0.797     0.715     0.753      0.903    0
+                 0.889     0.285      0.837     0.889     0.862      0.903    1
+Weighted Avg.    0.823     0.219      0.821     0.823     0.821      0.903
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2703 1080 |    a = 0
+  690 5527 |    b = 1
+
