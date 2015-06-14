@@ -1,0 +1,45 @@
+@relation 'Galaxy Large Matrix-weka.filters.unsupervised.attribute.Remove-R1,4,11,15-16,20-21,26,30-31,35-36,40-41,45-46,50-51,55,57-weka.filters.unsupervised.attribute.NumericToNominal-R40'
+
+@attribute iphone numeric
+@attribute samsunggalaxy numeric
+@attribute nokialumina numeric
+@attribute htcphone numeric
+@attribute ios numeric
+@attribute googleandroid numeric
+@attribute iphonecampos numeric
+@attribute samsungcampos numeric
+@attribute nokiacampos numeric
+@attribute htccampos numeric
+@attribute iphonecamneg numeric
+@attribute nokiacamneg numeric
+@attribute htccamneg numeric
+@attribute iphonecamunc numeric
+@attribute nokiacamunc numeric
+@attribute htccamunc numeric
+@attribute iphonedispos numeric
+@attribute samsungdispos numeric
+@attribute nokiadispos numeric
+@attribute htcdispos numeric
+@attribute iphonedisneg numeric
+@attribute nokiadisneg numeric
+@attribute htcdisneg numeric
+@attribute iphonedisunc numeric
+@attribute nokiadisunc numeric
+@attribute htcdisunc numeric
+@attribute iphoneperpos numeric
+@attribute nokiaperpos numeric
+@attribute htcperpos numeric
+@attribute iphoneperneg numeric
+@attribute nokiaperneg numeric
+@attribute htcperneg numeric
+@attribute iphoneperunc numeric
+@attribute nokiaperunc numeric
+@attribute htcperunc numeric
+@attribute iosperpos numeric
+@attribute iosperneg numeric
+@attribute iosperunc numeric
+@attribute googleperunc numeric
+@attribute galaxysentiment {0,1,2,3,4,5}
+
+@data
+125872,8180,437,11436,11893,5806,79331,38941,3948,41310,50190,1780,23426,49694,798,22769,105848,7735,1169,18848,95271,971,15767,84640,717,15392,126713,4448,29399,107984,2325,21675,78384,1210,17623,26002,25732,19456,9552,?
